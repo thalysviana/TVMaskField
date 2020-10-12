@@ -22,11 +22,11 @@ An easy way to handle textfields input formatation.
 Just define a mask to start using it.
                        DESC
 
-  s.homepage         = 'https://github.com/Thalys Viana/TVMaskField'
+  s.homepage         = 'https://github.com/thalysviana/TVMaskField'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Thalys Viana' => 'your email here' }
-  s.source           = { :git => 'https://github.com/Thalys Viana/TVMaskField.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/thalysviana/TVMaskField.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
