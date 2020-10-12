@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TVMaskField'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of TVMaskField.'
+  s.summary          = 'A swift library to handle string masks on textfields.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,23 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+An easy way to handle textfields input formatation.
+Just define a mask to start using it.
                        DESC
 
   s.homepage         = 'https://github.com/Thalys Viana/TVMaskField'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Thalys Viana' => 'thalysvianaguiar@gmail.com' }
+  s.author           = { 'Thalys Viana' => 'your email here' }
   s.source           = { :git => 'https://github.com/Thalys Viana/TVMaskField.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
+  
+  s.swift_version = '5.0'
 
   s.source_files = 'TVMaskField/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'TVMaskField' => ['TVMaskField/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit'
+  
 end

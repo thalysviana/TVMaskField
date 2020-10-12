@@ -22,7 +22,7 @@ pod 'TVMaskField'
 
 ## Author
 
-Thalys Viana, thalysvianaguiar@gmail.com
+Thalys Viana
 
 ## License
 
