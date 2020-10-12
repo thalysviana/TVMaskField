@@ -1,0 +1,22 @@
+{
+  "name": "TVMaskField",
+  "version": "0.1.0",
+  "summary": "A short description of TVMaskField.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Thalys Viana/TVMaskField",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Thalys Viana": "thalysvianaguiar@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Thalys Viana/TVMaskField.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TVMaskField/Classes/**/*"
+}

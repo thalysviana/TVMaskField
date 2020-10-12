@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TVMaskField_Example' do
+  pod 'TVMaskField', :path => '../'
+
+  target 'TVMaskField_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

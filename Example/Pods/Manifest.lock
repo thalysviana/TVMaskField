@@ -1,0 +1,16 @@
+PODS:
+  - TVMaskField (0.1.0)
+
+DEPENDENCIES:
+  - TVMaskField (from `../`)
+
+EXTERNAL SOURCES:
+  TVMaskField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TVMaskField: 4d25755b568e8c4564b1c018f16df580d492d3c5
+
+PODFILE CHECKSUM: 6b94f142d8af29bb4e0aa8f0dbe188ce35e12f5f
+
+COCOAPODS: 1.9.1

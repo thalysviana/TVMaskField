@@ -1,0 +1,6 @@
+framework module TVMaskField {
+  umbrella header "TVMaskField-umbrella.h"
+
+  export *
+  module * { export * }
+}
