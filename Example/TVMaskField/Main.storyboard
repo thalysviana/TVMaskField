@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X9C-je-wNE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="nS2-ML-eUN">
+            <objects>
+                <viewController id="X9C-je-wNE" customClass="ViewController" customModule="TVMaskField_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fUy-7j-qqf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="FtS-wI-1ws">
+                                <rect key="frame" x="16" y="400" width="382" height="96"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add mask here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7g1-nR-OUZ" customClass="TVMaskTextField" customModule="TVMaskField">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your text goes here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VlY-wS-RuL" customClass="TVMaskTextField" customModule="TVMaskField">
+                                        <rect key="frame" x="0.0" y="62" width="382" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="textMask" value="0000 0000 0000 0000"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="p2X-Jq-UaW">
+                                <rect key="frame" x="16" y="240.5" width="382" height="99.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Use 0 character for number representation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="my9-lt-zLM">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Use A character for letter representation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IC0-8f-xdM">
+                                        <rect key="frame" x="0.0" y="39.5" width="342" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Use * character for all representation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGs-bX-7PY">
+                                        <rect key="frame" x="0.0" y="79" width="312.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w0S-PP-25S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7g1-nR-OUZ" firstAttribute="top" secondItem="p2X-Jq-UaW" secondAttribute="bottom" constant="60" id="DTm-h6-taB"/>
+                            <constraint firstItem="p2X-Jq-UaW" firstAttribute="leading" secondItem="w0S-PP-25S" secondAttribute="leading" constant="16" id="GQC-Et-snu"/>
+                            <constraint firstItem="FtS-wI-1ws" firstAttribute="centerY" secondItem="fUy-7j-qqf" secondAttribute="centerY" id="JSm-Rl-Kft"/>
+                            <constraint firstItem="FtS-wI-1ws" firstAttribute="leading" secondItem="w0S-PP-25S" secondAttribute="leading" constant="16" id="Pae-pX-qBw"/>
+                            <constraint firstItem="p2X-Jq-UaW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="w0S-PP-25S" secondAttribute="top" constant="196" id="YQd-Bf-Qa5"/>
+                            <constraint firstItem="w0S-PP-25S" firstAttribute="trailing" secondItem="FtS-wI-1ws" secondAttribute="trailing" constant="16" id="ew7-gr-mzK"/>
+                            <constraint firstItem="w0S-PP-25S" firstAttribute="trailing" secondItem="p2X-Jq-UaW" secondAttribute="trailing" constant="16" id="tmh-88-gDM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="maskTextField" destination="7g1-nR-OUZ" id="Lls-5w-gge"/>
+                        <outlet property="resultsTextField" destination="VlY-wS-RuL" id="yIq-hv-xod"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q36-tI-2dJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-54" y="54"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -29,7 +29,7 @@ Just define a mask to start using it.
   s.source           = { :git => 'https://github.com/thalysviana/TVMaskField.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
   
   s.swift_version = '5.0'
 
