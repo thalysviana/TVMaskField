@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TVMaskField'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A swift library to handle string masks on textfields.'
 
 # This description is used to generate tags and improve search results.
@@ -18,16 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-An easy way to handle textfields input formatation.
+An easy way to handle formatation on textfield inputs.
 Just define a mask to start using it.
                        DESC
 
   s.homepage         = 'https://github.com/thalysviana/TVMaskField'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Thalys Viana' => 'your email here' }
   s.source           = { :git => 'https://github.com/thalysviana/TVMaskField.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
   

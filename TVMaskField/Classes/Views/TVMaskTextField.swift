@@ -22,10 +22,20 @@ public class TVMaskTextField: UITextField {
         }
     }
     
+    /// The text that the textfield displays with no formatation
     public var unmaskedText: String {
         tvMaskString.unmask(entry: text ?? "")
     }
     
+    /**
+        The mask to be applied on the textfield text
+     
+        Masks can have three types of symbols:
+     
+        - 0 for numeric values
+        - A for letters
+        - \* for alphanumeric values
+     */
     @IBInspectable public var textMask: String {
         get {
             tvMaskString.stringMask
