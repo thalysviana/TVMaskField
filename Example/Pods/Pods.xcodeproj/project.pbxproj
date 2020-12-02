@@ -11,11 +11,11 @@
 		15F6C6D23F5078B40274DBF28924D1B5 /* TVMaskField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB441C28F9635596CFA7FA8ECEFC2FC6 /* TVMaskField-dummy.m */; };
 		2EF68160B7B23F397AC2D9E4CFC3713D /* Pods-TVMaskField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 947594A95D00FF9BD1673B2368444765 /* Pods-TVMaskField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73675ED734CC5A0696A37265E479CBF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		770F89CC257778AD00A68076 /* TVMaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770F89CB2577789D00A68076 /* TVMaskTextField.swift */; };
+		770F89D0257778B000A68076 /* TVMaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770F89CB2577789D00A68076 /* TVMaskTextField.swift */; };
 		77BEB775FB7B805F157F9F81F3F766E6 /* Pods-TVMaskField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05982DCC290F7F6BF5C8CA548D01AD8F /* Pods-TVMaskField_Tests-dummy.m */; };
 		77C3745C25606B1A00D39C31 /* TVMaskString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C3745B25606B1A00D39C31 /* TVMaskString.swift */; };
 		77C3745D25606B1A00D39C31 /* TVMaskString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C3745B25606B1A00D39C31 /* TVMaskString.swift */; };
-		77CB559F256B900200CE3B22 /* TVMaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB559E256B900200CE3B22 /* TVMaskTextField.swift */; };
-		77CB55A0256B900200CE3B22 /* TVMaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB559E256B900200CE3B22 /* TVMaskTextField.swift */; };
 		9362578D43777997009B3764F0C5A6E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A24E3ADF7669265673EB1F1642F58DA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		BB5DE668112FC067777008D27DAFC2B3 /* Pods-TVMaskField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37A5A6BF729C65E2242D8349456F89F7 /* Pods-TVMaskField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,8 +50,8 @@
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		37A5A6BF729C65E2242D8349456F89F7 /* Pods-TVMaskField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TVMaskField_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6EA57DE1972719C75097D675672F10BD /* Pods_TVMaskField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVMaskField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		770F89CB2577789D00A68076 /* TVMaskTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMaskTextField.swift; sourceTree = "<group>"; };
 		77C3745B25606B1A00D39C31 /* TVMaskString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMaskString.swift; sourceTree = "<group>"; };
-		77CB559E256B900200CE3B22 /* TVMaskTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TVMaskTextField.swift; path = ../TVMaskField/Classes/Views/TVMaskTextField.swift; sourceTree = "<group>"; };
 		7989EE82DB9DA0B1D83C68D66317AA3E /* Pods-TVMaskField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TVMaskField_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7CF3521300C607C5AEDB1C2D36AC2F4F /* TVMaskField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TVMaskField-umbrella.h"; sourceTree = "<group>"; };
 		7E615F693E2E2ECE46264F95E0571AB6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 		2C1E34D77F925EE92B3CD19DA58D5FD5 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				77C3746E25609ECD00D39C31 /* Views */,
+				770F89CA2577789D00A68076 /* Views */,
 				77C3745A25606B0600D39C31 /* Models */,
 				7E615F693E2E2ECE46264F95E0571AB6 /* LICENSE */,
 				0720D9B781170A26FB11630D18DE13EF /* README.md */,
@@ -151,6 +151,15 @@
 			path = "Example/Pods/Target Support Files/TVMaskField";
 			sourceTree = "<group>";
 		};
+		770F89CA2577789D00A68076 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				770F89CB2577789D00A68076 /* TVMaskTextField.swift */,
+			);
+			name = Views;
+			path = TVMaskField/Classes/Views;
+			sourceTree = "<group>";
+		};
 		77C3745A25606B0600D39C31 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,14 +167,6 @@
 			);
 			name = Models;
 			path = TVMaskField/Classes/Models;
-			sourceTree = "<group>";
-		};
-		77C3746E25609ECD00D39C31 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				77CB559E256B900200CE3B22 /* TVMaskTextField.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		8DAEAEAA04F2C94AF3738D4DA951ED19 /* Targets Support Files */ = {
@@ -403,8 +404,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				77C3745D25606B1A00D39C31 /* TVMaskString.swift in Sources */,
+				770F89CC257778AD00A68076 /* TVMaskTextField.swift in Sources */,
 				15F6C6D23F5078B40274DBF28924D1B5 /* TVMaskField-dummy.m in Sources */,
-				77CB55A0256B900200CE3B22 /* TVMaskTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,8 +414,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				77C3745C25606B1A00D39C31 /* TVMaskString.swift in Sources */,
+				770F89D0257778B000A68076 /* TVMaskTextField.swift in Sources */,
 				77BEB775FB7B805F157F9F81F3F766E6 /* Pods-TVMaskField_Tests-dummy.m in Sources */,
-				77CB559F256B900200CE3B22 /* TVMaskTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
