@@ -40,6 +40,10 @@ it, simply add the following line to your Podfile:
 pod 'TVMaskField'
 ```
 
+## Example
+
+![Alt Text](https://media.giphy.com/media/3JG8rKl0kBfmpiguNa/giphy.gif)
+
 ## Author
 
 Thalys Viana
